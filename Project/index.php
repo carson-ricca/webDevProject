@@ -64,10 +64,10 @@
                         </div>
                 </div>
             <?php
-                $host = "cosc499.ok.ubc.ca";
+                $host = "localhost";
                 $database = "db_project";
-                $user = "webuser";
-                $password = "9UcM0QQcK1BwAXLk";
+                $user = "root";
+                $password = "";
                 $sql = '';
             
                 $connection = mysqli_connect($host, $user, $password, $database);
