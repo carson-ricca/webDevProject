@@ -39,6 +39,7 @@
             <div class = "collapse navbar-collapse" id = "myNavBar">
                 <ul class="nav navbar-nav">
                     <li><a href="index.php">Home</a></li>
+                    <li><a href = "about.php">About Us</a></li>
                     <li><a href="contact.php">Contact Us</a></li>
                 </ul>
             </div>
@@ -101,10 +102,10 @@
        
                 <?php
                     $filters = Array();
-                    $host = "cosc499.ok.ubc.ca";
+                    $host = "localhost";
                     $database = "db_project";
-                    $user = "webuser";
-                    $password = "9UcM0QQcK1BwAXLk";
+                    $user = "root";
+                    $password = "";
                     $sql = '';
 
                     $connection = mysqli_connect($host, $user, $password, $database);

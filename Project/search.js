@@ -32,7 +32,7 @@ function loadAll(){
 }
 
 function searchByAuthor(authorSearch){
-    if(window.location.pathname.indexOf('product.php') != -1 || window.location.pathname.indexOf('contact.php') != -1){
+    if(window.location.pathname.indexOf('product.php') != -1 || window.location.pathname.indexOf('contact.php') != -1 || window.location.pathname.indexOf('about.php') != -1){
         window.location.href = "index.php?authorInput=" + authorSearch;
     }
 
@@ -51,7 +51,7 @@ function searchByAuthor(authorSearch){
 }
 
 function searchByCategory(categoryName){
-    if(window.location.pathname.indexOf('product.php') != -1 || window.location.pathname.indexOf('contact.php') != -1){
+    if(window.location.pathname.indexOf('product.php') != -1 || window.location.pathname.indexOf('contact.php') != -1 || window.location.pathname.indexOf('about.php') != -1){
         window.location.href = "index.php?linkInput=" + categoryName;
     }
 
@@ -73,7 +73,7 @@ function searchByInput(e=null, searchInput=null){ //the ajax call when a term is
     if(searchInput == null)
         searchInput = $("#searchInput").val();
 
-    if(window.location.pathname.indexOf('product.php') != -1 || window.location.pathname.indexOf('contact.php') != -1){
+    if(window.location.pathname.indexOf('product.php') != -1 || window.location.pathname.indexOf('contact.php') != -1 || window.location.pathname.indexOf('about.php') != -1){
         window.location.href = "index.php?searchInput=" + searchInput;
     }
 
